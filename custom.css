@@ -1,0 +1,167 @@
+  /* font */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  /* font */
+
+/* variables */
+:root {
+    --dark-color: #101010;
+    --green-color: #26aa84;
+    --blue-color: #0ea5e9;
+    --pink-color: #855169;
+    --purple-color: #524163;
+    --white-color: #ffffff;
+  }
+  /* variables */
+
+  /* body */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    color: var(--purple-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+}
+  /* body */
+
+  /* container */
+  .custom-container {
+    max-width: 1410px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  /* container */
+
+  /* button */
+.button {
+  /* font-size: 20px; */
+  font-weight: 500;
+  line-height: normal;
+  display: inline-flex;
+  padding: 10px clamp(1.25rem, 0.778rem + 2.0137vw, 4rem);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  color: var(--white-color);
+  width: fit-content;
+}
+/* button */
+
+  /* image-with-text */
+.image-with-text {
+}
+
+.image-with-text__wrapper {
+}
+
+.image-with-text__image {
+}
+
+.image-with-text__info {
+}
+
+.info {
+}
+
+.info__head {
+}
+
+.info__title {
+    color: var(--purple-color);
+}
+
+.info__subtitle {
+    color: var(--pink-color);
+}
+
+.info__text {
+    color: var(--purple-color);
+}
+
+.info__button {
+    background-color: var(--blue-color);
+}
+/* image-with-text */
+
+
+/* about */
+.about {}
+
+.about__row {
+}
+
+.about__decorative-text {
+  color: rgba(16, 16, 16, 0.03);
+  font-size: clamp(7.5rem, 3.2524rem + 18.123vw, 25rem);
+}
+
+.about__column {
+}
+
+.about__title {
+}
+
+.about__text {
+}
+/* about */
+
+/* colors */
+.colors {
+  padding: clamp(2.5rem, 0.6796rem + 7.767vw, 10rem) 0;
+}
+
+.colors__wrapper {
+}
+
+.colors__inner {
+  gap: clamp(2.5rem, -0.4393rem + 12.5411vw, 14.61rem);
+}
+
+.colors__samples {
+}
+
+.colors__font {
+}
+
+.colors__decor {
+  margin-right: -50vw;
+}
+
+.custom-container {
+}
+
+.samples-colors {
+}
+
+.samples-colors__title {
+}
+
+.samples {
+}
+
+.samples__rectangle {
+  width: clamp(3.75rem, 0.1068rem + 15.5443vw, 18.76rem);
+  height: clamp(3.75rem, 3.1432rem + 2.589vw, 6.25rem);
+}
+
+.font-colors {
+}
+
+.font-colors__title {
+}
+
+.font-colors__name {
+}
+/* colors */

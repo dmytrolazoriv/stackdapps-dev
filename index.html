@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+<body>
+    <section class="image-with-text">
+        <div class="image-with-text__wrapper flex flex-col md:flex-row 2xl:gap-44 xl:gap-36 lg:gap-28 md:gap-20 sm:flex-col gap-y-10">
+            <div class="image-with-text__image w-full md:w-8/12">
+                <img class="w-full h-full object-cover object-center" src="../dist/laptop.png" alt="">
+            </div>
+            <div class="image-with-text__info w-full md:w-1/3 info flex justify-center flex-col px-5">
+                <div class="lg:max-w-md md:max-w-full flex flex-col gap-12 py-0 md:py-5 mb-16 md:mb-0">
+                    <div class="info__head flex flex-col lg:items-start md:items-start items-center">
+                        <h2 class="info__title text-3xl uppercase font-bold">Moravelli</h2>
+                        <h3 class="info__subtitle sm:text-xl text-sm">Natural skin care shop</h3>
+                    </div>
+                    <p class="info__text sm:text-xl text-sm">
+                        Step into a world of natural beauty and tranquility with our beautifully designed skincare website. At Moravelli, we have created an online sanctuary where you can explore and discover the finest in skincare essentials.
+                        website is thoughtfully crafted with a clean and elegant design, reflecting the purity and sophistication of our skincare products.
+                    </p>
+                    <a href="#" class="info__button button md:self-start sm:text-xl text-sm self-center uppercase">
+                        Live website
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.2731 9.15544L5.92854 19.5L4.00002 17.5715L14.3446 7.22692H4L4 4.5L19 4.5L19 19.5L16.2731 19.5V9.15544Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-banner">
+        <div class="image-banner__body relative">
+            <div class="image-banner__image">
+                <img class="w-full h-auto min-h-72 object-cover object-center" src="../dist/moravelli-banner.png" alt="">
+            </div>
+            <div class="image-banner__logo absolute top-2/4 left-1/2 -translate-x-1/2 z-10">
+                <img class="max-w-36 sm:max-w-full" src="../dist/moravelli-logo.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="about py-16 2xl:py-52 xl:py-44 lg:py-32 md:py-24">
+        <div class="about__row relative flex gap-14 2xl:gap-36 xl:gap-30 lg:gap-28 md:gap-28 flex-col md:flex-row justify-between items-center custom-container">
+            <div class="about__decorative-text uppercase font-bold absolute top-2/4 left-1/2 -translate-x-1/2 pointer-events-none">About</div>
+            <div class="about__column w-full lg:w-1/3 md:w-1/2">
+                <h3 class="about__title text-xl md:text-3xl font-bold uppercase mb-5 2xl:mb-16 xl:mb-12 lg:mb-9 md:mb-7">
+                    Task
+                </h3>
+                <p class="about__text text-sm md:text-xl">
+                    Our goal is to create a seamless and engaging online experience that addresses the unique needs of our customers. Through thoughtful design and user-centric approaches, we aim to solve several key problems to enhance the overall skincare shopping experience.
+                </p>
+            </div>
+            <div class="about__column w-full lg:w-1/3 md:w-1/2">
+                <h3 class="about__title text-xl md:text-3xl font-bold uppercase mb-5 2xl:mb-16 xl:mb-12 lg:mb-9 md:mb-7">
+                    Solution
+                </h3>
+                <p class="about__text text-sm md:text-xl">
+                    By addressing these key areas, we strive to create a skincare website that not only sells products but also inspires, and empowers customers to achieve their skincare goals.We implement features such as wishlists, product subscriptions, and personalized recommendations to encourage repeat purchases and foster customer loyalty. This creates a positive shopping experience that keeps customers coming back for more.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="colors relative bg-[#101010] max-h-[850px] min-h-[430px]">
+        <div class="colors__wrapper custom-container">
+            <div class="colors__inner flex items-start">
+                <div class="colors__samples samples-colors">
+                    <h3 class="samples-colors__title md:text-xl text-sm font-bold text-white text-opacity-50 mb-5">Colors</h3>
+                    <div class="samples__rectangle mb-[30px] bg-white"></div>
+                    <div class="samples__rectangle mb-[30px] bg-[#faf2e7]"></div>
+                    <div class="samples__rectangle mb-[30px] bg-[#f5e5ce]"></div>
+                    <div class="samples__rectangle mb-[30px] bg-[#303030]"></div>
+                </div>
+                <div class="colors__font font-colors">
+                    <h3 class="font-colors__title font-bold md:text-xl text-sm text-white text-opacity-50 mb-4">Typography</h3>
+                    <div class="font-colors__name text-white md:text-[40px] text-[16px] font-bold">Roboto Condensed</div>
+                </div>
+            </div>
+            <div class="colors__decor absolute top-0 bottom-0 right-2/4 text-white pointer-events-none">
+                <!-- <svg class="w-full h-full" width="478" height="850" viewBox="0 0 478 850" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M419.355 145.364L187.097 850H0L317.302 0H436.364L419.355 145.364ZM612.317 850L379.472 145.364L360.704 0H480.938L800 850H612.317ZM601.76 533.585V670.776H150.733V533.585H601.76Z" fill="currentColor"/>
+                </svg> -->
+                <img class="hidden md:block w-full h-full pointer-events-none" src="../dist/colors-vector-1-s.svg" alt="">
+                <img class="block md:hidden w-full h-full pointer-events-none" src="../dist/colors-vector-2-s.svg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
