@@ -785,6 +785,10 @@ video {
   border-radius: 29px;
 }
 
+.border-l-0 {
+  border-left-width: 0px;
+}
+
 .bg-\[\#011c27\] {
   --tw-bg-opacity: 1;
   background-color: rgb(1 28 39 / var(--tw-bg-opacity));

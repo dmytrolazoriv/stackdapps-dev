@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-    <!-- animation -->
+    <!-- Switch button -->
+    <div class="custom-container switcher">
+        <button class="switcher__button" type="button" name="dark_light" title="Toggle dark/light mode">🌛</button>
+    </div>
+    <!-- Switch button -->
+    <!-- Animation -->
     <div class="blur-container"
     style="--blur:12vw;">
 <div class="shape" 
@@ -20,14 +25,14 @@
     --background: linear-gradient(#b5c3f1, #d0b3ec, #edaac9, #f3cab8, #d0b3ec);
     "></div>
     </div>
-    <!-- animation -->
-    <h2 class="apps__title uppercase text-center font-bold">Apps</h2>
+    <!-- Animation -->
     <section class="case">
+        <h2 class="section__title uppercase text-center font-bold">Apps</h2>
         <div class="case__wrapper flex relative">
             <div class="case__image">
                 <img class="h-full object-cover object-center" src="images/case-image-1.png" alt="">
             </div>
-            <div class="case__info absolute top-0 right-0 bottom-0 left-0 info-case flex flex-col justify-center items-center">
+            <div class="case__info case__info_right absolute top-0 right-0 bottom-0 left-0 info-case flex flex-col justify-center items-center border-l-0">
                 <div class="info-case__inner flex flex-col items-start">
                     <div class="info-case__top">
                         <h3 class="info-case__title uppercase font-bold">StackdMeta: Importer/Exporter</h3>
@@ -55,7 +60,7 @@
             <div class="case__image bg-[#d9d9d9]">
                 <!-- <img class="h-full object-cover object-center" src="images/case-image-1.png" alt=""> -->
             </div>
-            <div class="case__info absolute top-0 right-0 bottom-0 left-0 info-case flex flex-col justify-center items-center">
+            <div class="case__info case__info_left absolute top-0 right-0 bottom-0 left-0 info-case flex flex-col justify-center items-center">
                 <div class="info-case__inner flex flex-col items-start">
                     <div class="info-case__top">
                         <h3 class="info-case__title uppercase font-bold">Name</h3>

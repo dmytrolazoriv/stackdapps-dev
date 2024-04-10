@@ -7,9 +7,13 @@
     --dark-color: #101010;
     --green-color: #26aa84;
     --blue-color: #0ea5e9;
+    --blue-hover-color: #0c92cf;
     --pink-color: #855169;
     --purple-color: #524163;
     --white-color: #ffffff;
+    --white-transparency-1-color: rgba(255, 255, 255, 0.05);
+    --white-transparency-2-color: rgba(255, 255, 255, 0.2);
+    --black-color: #1a1b1c;
   }
   /* variables */
 
@@ -35,6 +39,55 @@
 }
   /* body */
 
+  /* dark mode */
+  body.dark-mode,
+  body.dark-mode * {
+    color: var(--white-color) !important;
+  }
+
+  body.dark-mode {
+    background-color: var(--black-color);
+  }
+
+  body.dark-mode .switcher__button {
+    background-color: var(--white-color);
+  }
+
+  body.dark-mode .homepage__decor {
+    background-color: var(--white-color);
+  }
+
+  body.dark-mode .about__decorative-text {
+    color: var(--white-transparency-1-color) !important;
+  }
+
+  body.dark-mode .website__decorative-text,
+  body.dark-mode .quote__body > * {
+    color: var(--white-transparency-2-color) !important;
+  }
+
+  body.dark-mode .info__head .info__subtitle,
+  body.dark-mode .samples-colors__title,
+  body.dark-mode .font-colors__title {
+    color: #8c8d8d !important;
+  }
+  /* dark mode */
+
+  /* switch button */
+  .switcher {
+  }
+
+  .switcher__button {
+    position: absolute;
+    top: 50px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    box-shadow: 40px 40px 40px 0px rgba(82, 65, 99, 0.10);
+    background: var(--dark-color);
+    padding: clamp(0.1875rem, 0.1572rem + 0.1294vw, 0.3125rem) clamp(0.4375rem, 0.392rem + 0.1942vw, 0.625rem);
+  }
+  /* switch button */
+
   /* container */
   .custom-container {
     max-width: 1410px;
@@ -57,7 +110,12 @@
   color: var(--white-color);
   background-color: var(--blue-color);
   width: fit-content;
+  transition: all 0.3s ease 0s;
 }
+
+/* .button:hover:not(.item-updates__button) {
+  background-color: var(--blue-hover-color);
+} */
 /* button */
 
   /* image-with-text */
@@ -355,6 +413,10 @@
   padding: 0 0 clamp(3.75rem, 1.6262rem + 9.0615vw, 12.5rem) 0;
 }
 
+.case:last-of-type {
+  padding: 0 0 clamp(3.75rem, 3.1432rem + 2.589vw, 6.25rem) 0;
+}
+
 .case__wrapper {
 }
 
@@ -376,12 +438,19 @@
   max-width: clamp(3.75rem, 0.716rem + 12.945vw, 16.25rem);
 }
 
-
 @media (min-width: 992px) {
   .case__logo {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1921px) {
+  .case__logo {
+    transform: translate(-160%, -50%);
+    -webkit-transform: translate(-160%, -50%);
+    -ms-transform: translate(-160%, -50%);
   }
 }
 
@@ -404,6 +473,14 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1921px) {
+  .case_reverse .case__logo {
+    transform: translate(100%, -50%);
+    -webkit-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
   }
 }
 
@@ -451,6 +528,37 @@
   /* mix-blend-mode: soft-light; */
   overflow: hidden;
   z-index: 10;
+}
+
+@media (min-width: 1921px) {
+  .case__image {
+    max-width: 100%;
+    max-height: 400px;
+  }
+
+  .case__image img {
+    width: 100%;
+  }
+
+  .case__info {
+    max-width: clamp(71.25rem, 14.8826rem + 46.9484vw, 90rem);
+  }
+}
+
+.case__info_right {
+  border-right: 0;
+}
+
+.case__info_left {
+  border-left: 0;
+}
+
+.case__info_right {
+  border-right: 0;
+}
+
+.case__info_left  {
+  border-left: 0;
 }
 
 .case__info::after {
@@ -554,12 +662,19 @@
 }
 /* case */
 
-/* apps page */
-.apps__title {
+/* apps and portfolio page */
+section:first-of-type .section__title {
   padding: clamp(3.75rem, 3.1432rem + 2.589vw, 6.25rem) 0 clamp(3.75rem, 1.6262rem + 9.0615vw, 12.5rem) 0;
+}
+
+section:not(:first-of-type) .section__title  {
+  padding: 0 0 clamp(3.75rem, 1.6262rem + 9.0615vw, 12.5rem) 0;
+}
+
+.section__title {
   font-size: clamp(1.25rem, 0.9466rem + 1.2945vw, 2.5rem);
 }
-/* apps */
+/* apps and portfolio page */
 
 /* info-banner */
 .homepage {
@@ -823,6 +938,7 @@
 }
 
 .updates__info {
+  margin-bottom: clamp(2.5rem, 2.1056rem + 1.6828vw, 4.125rem);
 }
 
 .updates__title { 
@@ -896,7 +1012,7 @@
   gap: clamp(0.625rem, 0.4733rem + 0.6472vw, 1.25rem);
 }
 
-.item-updates__button img {
+.item-updates__button svg {
   max-width: clamp(2.5625rem, 2.2591rem + 1.2945vw, 3.8125rem);
 }
 /* updates */
@@ -910,6 +1026,7 @@
 }
 
 .merch__info {
+  margin-bottom: clamp(2.5rem, 2.1056rem + 1.6828vw, 4.125rem);
 }
 
 .merch__title {

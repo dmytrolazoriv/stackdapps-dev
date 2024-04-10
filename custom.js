@@ -51,4 +51,16 @@ window.addEventListener('load', adjustPosition);
 window.addEventListener('resize', adjustPosition);
 window.addEventListener('orientationchange', adjustPosition);
 // =========== case__logo left and right position updating ===============
+
+
+function toggleDarkMode() {
+   document.body.classList.toggle('dark-mode');
+ }
+
+ let switcherButton = document.querySelector('.switcher__button');
+
+ switcherButton.addEventListener('click', function() {
+   toggleDarkMode();
+ });
+// =========== Switch light & dark theme ===========
 });
