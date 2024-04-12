@@ -422,6 +422,7 @@
 
 .case__image {
   min-height: clamp(18.75rem, 17.233rem + 6.4725vw, 25rem);
+  height: clamp(12.5rem, 9.466rem + 12.945vw, 25rem);
   min-width: 120px;
   width: clamp(7.5rem, -19.8058rem + 116.5049vw, 120rem);
   max-width: 933px;
@@ -521,6 +522,7 @@
   box-shadow: 40px 40px 40px 0px rgba(82, 65, 99, 0.10);
   max-width: clamp(16.875rem, 4.284rem + 53.7217vw, 68.75rem);
   max-height: clamp(17.5rem, 16.2864rem + 5.178vw, 22.5rem);
+  height: clamp(17.5rem, 16.2864rem + 5.178vw, 22.5rem);
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
@@ -533,7 +535,9 @@
 @media (min-width: 1921px) {
   .case__image {
     max-width: 100%;
-    max-height: 400px;
+    /* max-height: 400px; */
+    height: clamp(22.5rem, 19.466rem + 12.945vw, 35rem);
+    max-height: clamp(22.5rem, 19.466rem + 12.945vw, 35rem);
   }
 
   .case__image img {
@@ -542,6 +546,8 @@
 
   .case__info {
     max-width: clamp(71.25rem, 14.8826rem + 46.9484vw, 90rem);
+    height: clamp(22.5rem, 20.0728rem + 10.356vw, 32.5rem);
+    max-height: clamp(22.5rem, 20.0728rem + 10.356vw, 32.5rem);
   }
 }
 
@@ -973,6 +979,8 @@ section:not(:first-of-type) .section__title  {
 }
 
 .item-updates {
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.79);
   background: linear-gradient(113deg, rgba(181, 195, 241, 0.36) 0%, rgba(255, 255, 255, 0.23) 110.84%);
@@ -988,9 +996,12 @@ section:not(:first-of-type) .section__title  {
 }
 
 .item-updates__body {
-  display: grid;
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
   gap: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
   padding: clamp(1.875rem, 1.5413rem + 1.4239vw, 3.25rem) clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem) clamp(1.25rem, 1.0983rem + 0.6472vw, 1.875rem) clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+  height: 100%;
 }
 
 .item-updates__title {
@@ -1002,6 +1013,7 @@ section:not(:first-of-type) .section__title  {
   font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
   line-height: 110%;
   color: var(--pink-color);
+  flex: 1;
 }
 
 .item-updates__button {
